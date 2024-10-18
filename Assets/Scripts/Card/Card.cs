@@ -1,19 +1,36 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Singletons;
 
 namespace Card
 {
-    public class CardData
+    public class Card : CardBase
     {
-        public int Cost { get; set; }
-        public string Name { get; set; }
+        private CardData _data;
 
-        internal CardData()
+        public CardData Data => _data;
+
+
+        public void Initialize()
         {
-            Cost = -1;
-            Name = null;
+            _data = new CardData();
+            _data.Initialize();
+        }
+
+        public override void MouseClick()
+        {
+            Debug.Log("Test Click Method");
+        }
+
+        public override void MouseEnter()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void MouseExit()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

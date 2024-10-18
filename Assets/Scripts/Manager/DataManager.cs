@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Singletons;
 
-public class DataManager : Singleton<DataManager>
+public class DataManager : SingletonBase<DataManager>
 {
     
 }

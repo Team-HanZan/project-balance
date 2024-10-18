@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Singletons
 {
-    public class Singleton<T> : MonoBehaviour where T : Component
+    public class SingletonBase<T> : MonoBehaviour where T : Component
     {
         protected static T _instance;
 
@@ -19,6 +17,7 @@ namespace Singletons
                     if ((Object)(object)_instance == (Object)null)
                     {
                         _instance = new GameObject().AddComponent<T>();
+                        _instance.name = typeof(T).Name;
                     }
                 }
                 return _instance;

@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Singletons;
 
 namespace Card.Deck
 {
@@ -13,6 +11,11 @@ namespace Card.Deck
         public void Initialize()
         {
             Cards = new List<CardData>();
+        }
+
+        public void LoadCardData()
+        {
+
         }
 
     }

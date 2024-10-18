@@ -1,12 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using Singletons;
-using System.IO;
+using UnityEngine;
 
 
-
-public sealed class GameManager : Singleton<GameManager>
+public sealed class GameManager : SingletonBase<GameManager>
 {
     public int sessionId;
 
@@ -14,6 +10,7 @@ public sealed class GameManager : Singleton<GameManager>
     protected override void Awake()
     {
         base.Awake();
+
     }
 
 }
