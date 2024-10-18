@@ -9,6 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29bec517f9e77ec43bdba00778d7fc30, type: 3}
-  m_Name: Slash
+  m_Script: {fileID: 11500000, guid: 1000a84540dafa54c8ebddc6ccea5b56, type: 3}
+  m_Name: Eye
   m_EditorClassIdentifier: 
+  _name: Eye beam
+  _cost: 99
+  _tier: 3
+  _description: "\uCE58\uBA85\uC801\uC778 \uB208\uBE5B\uC73C\uB85C \uC0C1\uB300\uB97C
+    \uC989\uC0B4\uD55C\uB2E4."

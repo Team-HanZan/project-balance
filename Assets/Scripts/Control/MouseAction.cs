@@ -9,7 +9,7 @@ using Unity.VisualScripting;
 
 namespace Control
 {
-    public class MouseAction : SingletonBase<MouseAction>
+    public sealed class MouseAction : SingletonBase<MouseAction>
     {
         private EventSystem _eventSystem;
         private GraphicRaycaster _raycaster;

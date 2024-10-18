@@ -9,10 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29bec517f9e77ec43bdba00778d7fc30, type: 3}
-  m_Name: DummyCard
+  m_Script: {fileID: 11500000, guid: 1000a84540dafa54c8ebddc6ccea5b56, type: 3}
+  m_Name: Scream
   m_EditorClassIdentifier: 
-  _name: "\uBCA0\uAE30"
+  _name: Scream
   _cost: 1
-  _description: "3\uC758 \uB370\uBBF8\uC9C0\uB85C \uBCA4\uB2E4."
-  _deckIndex: 0
+  _tier: 2
+  _description: "\uB178\uC774\uC2A4\uC758 \uBE44\uBA85\uC73C\uB85C \uC0C1\uB300\uB97C
+    \uAE30\uC808\uC2DC\uD0A8\uB2E4."

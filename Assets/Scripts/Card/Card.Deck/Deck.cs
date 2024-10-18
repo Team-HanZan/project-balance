@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
+using Card.Data;
 
 namespace Card.Deck
 {
-    public class Deck : MonoBehaviour
+    public sealed class Deck : MonoBehaviour
     {
         public List<CardData> Cards { get; private set; }
-
 
         public void Initialize()
         {
@@ -17,6 +17,5 @@ namespace Card.Deck
         {
 
         }
-
     }
 }

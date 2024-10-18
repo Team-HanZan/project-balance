@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Card
 {
@@ -15,20 +14,21 @@ namespace Card
 
         [Space]
         [SerializeField]
-        private string _description;
+        private Tier _tier;
 
         [Space]
         [SerializeField]
-        private UnityEvent _onUse;
+        [TextArea(4, 6)]
+        private string _description;
 
 
         public string Name => _name;
 
         public int Cost => _cost;
 
-        public string Description => _description;
+        public Tier Tier => _tier;
 
-        public UnityEvent OnUse => _onUse;
+        public string Description => _description;
 
         public abstract void Initialize();
 
