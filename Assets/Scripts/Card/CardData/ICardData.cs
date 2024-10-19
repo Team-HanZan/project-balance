@@ -18,6 +18,10 @@ namespace Card
 
         [Space]
         [SerializeField]
+        private CharacterType _target;
+
+        [Space]
+        [SerializeField]
         [TextArea(4, 6)]
         private string _description;
 
@@ -27,6 +31,8 @@ namespace Card
         public int Cost => _cost;
 
         public Tier Tier => _tier;
+
+        public CharacterType Target => _target;
 
         public string Description => _description;
 

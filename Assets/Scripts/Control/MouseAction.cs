@@ -20,6 +20,8 @@ namespace Control
 
         public GameObject CurrentObject => _currentObject;
 
+        private bool _available;
+
         protected override void Awake()
         {
             base.Awake();
@@ -30,19 +32,24 @@ namespace Control
             _previousObject = null;
             _currentObject = null;
 
+            _available = false;
+
             _eventSystem = GameObject.FindObjectOfType<EventSystem>();
 
             _raycaster = GameObject.Find("MainCanvas").GetOrAddComponent<GraphicRaycaster>();  
         }
 
+        #region 마우스 입력 처리
         private void Update()
         {
-            CastCurrentMousePosition();
+            if (!_available) return;
+
+            CastCurrentMousePositionUI();
 
             DetectClickEveryFrame();
         }
 
-        public void CastCurrentMousePosition()
+        public void CastCurrentMousePositionUI()
         {
             PointerEventData pointerEventData = new PointerEventData(_eventSystem);
             pointerEventData.position = Input.mousePosition;
@@ -99,6 +106,7 @@ namespace Control
             }
         }
 
+        #endregion
 
         private void OnEnter(GameObject obj)
         {
