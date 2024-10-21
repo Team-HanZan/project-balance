@@ -1,11 +1,10 @@
-
 using UnityEngine;
 using UnityEngine.Events;
 
 namespace Card.Data
 {
     [CreateAssetMenu(fileName = "new Card", menuName = "Scriptable Objects/Card", order = int.MaxValue)]
-    public class CardData : ICardData
+    public sealed class CardData : ICardData
     {
 
         private UnityEvent<object> _onUse;
@@ -20,6 +19,8 @@ namespace Card.Data
         public override void Initialize()
         {
             // TODO: 카드 효과 받아와서 효과 적용 페이즈에 추가
+
+            
         }
 
         public override void Update()

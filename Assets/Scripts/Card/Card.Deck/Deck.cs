@@ -13,9 +13,6 @@ namespace Card.Deck
             Cards = new List<CardData>();
         }
 
-        public void LoadCardData()
-        {
-
-        }
+        
     }
 }

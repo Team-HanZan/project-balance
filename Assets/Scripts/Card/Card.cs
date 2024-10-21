@@ -1,4 +1,3 @@
-using UnityEngine;
 using Card.Data;
 
 namespace Card

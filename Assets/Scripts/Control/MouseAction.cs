@@ -36,7 +36,7 @@ namespace Control
 
             _eventSystem = GameObject.FindObjectOfType<EventSystem>();
 
-            _raycaster = GameObject.Find("MainCanvas").GetOrAddComponent<GraphicRaycaster>();  
+            _raycaster = GameObject.Find("PlayCanvas").GetOrAddComponent<GraphicRaycaster>();
         }
 
         #region 마우스 입력 처리

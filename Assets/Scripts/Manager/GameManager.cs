@@ -1,15 +1,30 @@
+using Card.Dictionary;
 using Singletons;
 using UnityEngine;
 
-
-public sealed class GameManager : SingletonBase<GameManager>
+namespace Manager
 {
-    public int sessionId;
 
-
-    protected override void Awake()
+    public sealed class GameManager : SingletonBase<GameManager>
     {
-        base.Awake();
+        private CardDictionary cardDictionary;
+
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+        }
+
+        public void Initialize()
+        {
+            cardDictionary = new CardDictionary();
+            cardDictionary.Initialize();
+
+            Debug.Log(cardDictionary.RandomCard.Name);
+            Debug.Log(cardDictionary.RandomCard.Name);
+            Debug.Log(cardDictionary.RandomCard.Name);
+        }
 
     }
 

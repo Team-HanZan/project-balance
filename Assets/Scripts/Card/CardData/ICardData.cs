@@ -1,9 +1,12 @@
+using Card.Action;
 using System;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Card
 {
-    public abstract class ICardData : ScriptableObject
+    public abstract class ICardData : ScriptableObject, ICloneable
     {
         [SerializeField]
         private string _name;
@@ -22,8 +25,7 @@ namespace Card
 
         [Space]
         [SerializeField]
-        [TextArea(4, 6)]
-        private string _description;
+        private List<ActionData> _actionData;
 
 
         public string Name => _name;
@@ -34,12 +36,27 @@ namespace Card
 
         public CharacterType Target => _target;
 
-        public string Description => _description;
+        public List<ActionData> ActionData => _actionData;
 
         public abstract void Initialize();
 
         public abstract void Clear();
 
         public abstract void Update();
+
+        public object Clone()
+        {
+            // 깊은 복사: 새 객체를 생성하고, 모든 필드 값을 복사
+            var clonedCard = Instantiate(this); // ScriptableObject의 인스턴스를 복사
+
+            // 참조 타입인 ActionData 리스트를 깊은 복사
+            clonedCard._actionData = new List<ActionData>(_actionData.Count);
+            foreach (var action in _actionData)
+            {
+                clonedCard._actionData.Add(action.Clone() as ActionData); // ActionData가 ICloneable을 구현한다고 가정
+            }
+
+            return clonedCard;
+        }
     }
 }
