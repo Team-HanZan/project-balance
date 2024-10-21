@@ -16,11 +16,9 @@ MonoBehaviour:
   _cost: 2
   _tier: 3
   _target: 1
-  _description: "\uB9DD\uC6D0\uD0B9\uC740 \uB300\uB2E8\uD588\uC73C\uB098 \uBC1C\uB05D\uC5D0
-    \uBBF8\uCE58\uC9C0 \uBABB\uD558\uC600\uB2E4."
   _actionData:
   - actionType: 0
-    effect: 0
+    effect: 2
     value: 99
     cardTarget: 5
     cardAction: 1

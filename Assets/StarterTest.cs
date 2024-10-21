@@ -1,5 +1,6 @@
 using UnityEngine;
 using Control;
+using Manager;
 
 public class StarterTest : MonoBehaviour
 {
