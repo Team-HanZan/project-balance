@@ -10,17 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2de7ef30a6cd63e4a8a75ca4aebf9085, type: 3}
-  m_Name: TestEvent
+  m_Name: FortuneTeller
   m_EditorClassIdentifier: 
   Type: 0
-  Description: "\uBAA8\uB2E5\uBD88\uC5D0 \uC549\uC544 \uD734\uC2DD\uC744 \uCDE8\uD569\uB2C8\uB2E4."
+  Description: 
   EventImage: {fileID: 0}
-  ChoiceNum: 2
-  ChoiceText:
-  - "\uC11C\uB85C \uC774\uC57C\uAE30\uB97C \uB098\uB215\uB2C8\uB2E4. (\uAD00\uACC4\uB3C4
-    +1)"
-  - "\uBAA8\uB2E5\uBD88\uC744 \uBCF4\uBA70 \uD798\uB4E0 \uAE30\uC5B5\uC744 \uC78A\uC2B5\uB2C8\uB2E4.(\uCE74\uB4DC
-    \uC81C\uAC70)"
+  ChoiceNum: 0
+  ChoiceText: []
   EventAction:
     m_PersistentCalls:
       m_Calls: []

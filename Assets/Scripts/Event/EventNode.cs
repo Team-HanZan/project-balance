@@ -32,7 +32,13 @@ namespace Event
     }
     public enum EventType
     {
-        Rest,a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,
+        Rest,TresureBox,HelpFallenGuy,
+        Sacrifice,Greed,Swear,
+        FortuneTeller,Donation,Pray,
+        NightDuty,Storm,BackStab,
+        Desire,BeStolen,InsultEachOther,
+        TakeTest,SpeakCandidly,MakeASacrifice,
+        GiveUpFood,Predictor
     }
 }
 

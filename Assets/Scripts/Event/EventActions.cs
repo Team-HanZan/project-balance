@@ -13,6 +13,21 @@ namespace Event
             print("leave");
             return;
         }
+        #region Rest
+        public void RestoreRelationship()
+        {
+
+        }
+        public void RemoveOneCard()
+        {
+
+        }
+        public void UpgradeChooseCard()
+        {
+
+        }
+        #endregion
+
         #region TresureBox
         //OpenTreasureChest
         public void AcuireRandomItem()
@@ -88,10 +103,7 @@ namespace Event
         #endregion
 
         #region Pray
-        public void RemoveOneCard()
-        {
-            print("pray");
-        }
+        //remove one card method already have
         public void RemoveItemAndTwoCard()
         {
             print("donate money");
@@ -183,10 +195,7 @@ namespace Event
         #endregion
 
         #region Predictor
-        public void UpgradeChoseCard()
-        {
-            print("Winter is comming");
-        }
+        //choose card in rest region
         #endregion
     }
 }
