@@ -20,7 +20,7 @@ namespace Card.Data
         {
             // TODO: 카드 효과 받아와서 효과 적용 페이즈에 추가
 
-            
+            throw new System.NotFiniteNumberException();
         }
 
         public override void Update()
