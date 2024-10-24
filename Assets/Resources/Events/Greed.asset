@@ -12,11 +12,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de7ef30a6cd63e4a8a75ca4aebf9085, type: 3}
   m_Name: Greed
   m_EditorClassIdentifier: 
-  Type: 0
-  Description: 
+  Type: 4
+  Description: "\uB5A0\uB3CC\uC774 \uC0C1\uC778\uC774 \uC544\uC5D0\uD300\uC744 \uB5A8\uC5B4\uB728\uB9AC\uACE0
+    \uC9C0\uB098\uAC11\uB2C8\uB2E4.\\n \uC774 \uB54C \uCE74\uC778\uC774 \uC544\uC774\uD15C\uC744
+    \uC90D\uACE0 \uACE0\uBBFC\uD569\uB2C8\uB2E4."
   EventImage: {fileID: 0}
-  ChoiceNum: 0
-  ChoiceText: []
+  ChoiceNum: 2
+  ChoiceText:
+  - "\uCE74\uC778\uC774 \uC544\uC774\uD15C\uC744 \uD6D5\uCCD0\uAC11\uB2C8\uB2E4."
+  - "\uC544\uBCA8\uC774 \uCE74\uC778\uC5D0\uAC8C \uC544\uC774\uD15C\uC744 \uB3CC\uB824\uC8FC\uB77C\uACE0
+    \uC598\uAE30\uD569\uB2C8\uB2E4."
   EventAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
+        m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
+        m_MethodName: AcuireRandomItemInGreed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

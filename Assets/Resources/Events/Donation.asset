@@ -12,11 +12,38 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de7ef30a6cd63e4a8a75ca4aebf9085, type: 3}
   m_Name: Donation
   m_EditorClassIdentifier: 
-  Type: 0
-  Description: 
+  Type: 7
+  Description: "\uAE30\uBD80 \uB2E8\uCCB4\uC5D0\uC11C \uC120\uD589\uC744 \uBCA0\uD480\uC5B4
+    \uB2EC\uB77C\uACE0 \uD569\uB2C8\uB2E4."
   EventImage: {fileID: 0}
-  ChoiceNum: 0
-  ChoiceText: []
+  ChoiceNum: 2
+  ChoiceText:
+  - "\uC544\uC774\uD15C\uC744 \uAE30\uBD80\uD55C\uB2E4."
+  - "\uBB34\uC2DC\uD55C\uB2E4."
   EventAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
+        m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
+        m_MethodName: IncreaseRelationshipFromItem
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
+        m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
+        m_MethodName: AcuireRandomCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

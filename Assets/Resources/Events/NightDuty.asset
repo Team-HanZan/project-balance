@@ -12,11 +12,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de7ef30a6cd63e4a8a75ca4aebf9085, type: 3}
   m_Name: NightDuty
   m_EditorClassIdentifier: 
-  Type: 0
-  Description: 
+  Type: 9
+  Description: "\uB450 \uC0AC\uB78C\uC740 \uC624\uB450\uB9C9\uC5D0\uC11C \uC7A0\uC2DC
+    \uC26C\uC5C8\uB2E4 \uAC00\uB824\uACE0 \uD569\uB2C8\uB2E4.\\n\uADF8\uB7EC\uB098
+    \uC8FC\uC704\uC758 \uB9F9\uC218\uB4E4\uC774 \uC11C\uC2DD\uD558\uACE0 \uC788\uC5B4\uC11C\\n\uD55C
+    \uBA85\uC774 \uC790\uB294 \uB3D9\uC548 \uB2E4\uB978 \uD55C \uBA85\uC740 \uBD88\uCE68\uBC88\uC744
+    \uC11C\uC57C \uD569\uB2C8\uB2E4."
   EventImage: {fileID: 0}
-  ChoiceNum: 0
-  ChoiceText: []
+  ChoiceNum: 2
+  ChoiceText:
+  - "\uCE74\uC778\uC774 \uBD88\uCE68\uBC88\uC744 \uD569\uB2C8\uB2E4."
+  - "\uC544\uBCA8\uC774 \uBD88\uCE68\uBC88\uC744 \uD569\uB2C8\uB2E4."
   EventAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
+        m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
+        m_MethodName: DeleteGirlToAcuireBoyCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
+        m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
+        m_MethodName: DeleteBoyToAcuireGirlCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

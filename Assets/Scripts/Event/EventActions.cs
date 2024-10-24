@@ -16,15 +16,15 @@ namespace Event
         #region Rest
         public void RestoreRelationship()
         {
-
+            print("restore relationship");
         }
         public void RemoveOneCard()
         {
-
+            print("remove one card");
         }
         public void UpgradeChooseCard()
         {
-
+            print("upgrade choose card");
         }
         #endregion
 
@@ -176,7 +176,7 @@ namespace Event
         }
         #endregion
 
-        #region Make a sacrifice
+        #region Make sacrifice
         public void RemoveItemAndUpgradeSelectedCard()
         {
             print("donate Item");

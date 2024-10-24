@@ -10,22 +10,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2de7ef30a6cd63e4a8a75ca4aebf9085, type: 3}
-  m_Name: TakeTest
+  m_Name: Predictor
   m_EditorClassIdentifier: 
-  Type: 15
-  Description: "\uC218\uD638\uC2E0\uC774 \uB450 \uC0AC\uB78C\uC758 \uC55E\uC744 \uAC00\uB85C\uB9C9\uC2B5\uB2C8\uB2E4.\\n\"\uB458
-    \uC911 \uD55C\uBA85 \uC790\uC2E0\uC744 \uD76C\uC0DD\uD558\uB77C\""
+  Type: 18
+  Description: "\uAD76\uC8FC\uB9AC\uB358 \uB450 \uC0AC\uB78C\uC740 \uAE38\uAC00\uC5D0\uC11C
+    \uC74C\uC2DD\uC744 \uBC1C\uACAC\uD569\uB2C8\uB2E4.\\n\uD558\uC9C0\uB9CC \uD55C
+    \uBA85\uC774 \uACA8\uC6B0 \uBC30\uB97C \uCC44\uC6B8 \uC815\uB3C4\uC758 \uC591
+    \uBC16\uC5D0 \uC5C6\uC2B5\uB2C8\uB2E4."
   EventImage: {fileID: 0}
   ChoiceNum: 2
   ChoiceText:
-  - "\uCE74\uC778\uC774 \uC2DC\uD5D8\uC744 \uBC1B\uC2B5\uB2C8\uB2E4."
-  - "\uC544\uBCA8\uC774 \uC2DC\uD5D8\uC744 \uBC1B\uC2B5\uB2C8\uB2E4."
+  - "\uCE74\uC778\uC774 \uC544\uBCA8\uC5D0\uAC8C \uC74C\uC2DD\uC744 \uC591\uBCF4\uD569\uB2C8\uB2E4."
+  - "\uC544\uBCA8\uC774 \uCE74\uC778\uC5D0\uAC8C \uC74C\uC2DD\uC744 \uC591\uBCF4\uD569\uB2C8\uB2E4."
   EventAction:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
         m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
-        m_MethodName: UpgradeAllBoyCard
+        m_MethodName: UpgradeBoyCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -37,7 +39,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
         m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
-        m_MethodName: UpgradeAllGirlCard
+        m_MethodName: UpgradeGirlCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

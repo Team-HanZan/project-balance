@@ -10,34 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2de7ef30a6cd63e4a8a75ca4aebf9085, type: 3}
-  m_Name: TakeTest
+  m_Name: Strom
   m_EditorClassIdentifier: 
-  Type: 15
-  Description: "\uC218\uD638\uC2E0\uC774 \uB450 \uC0AC\uB78C\uC758 \uC55E\uC744 \uAC00\uB85C\uB9C9\uC2B5\uB2C8\uB2E4.\\n\"\uB458
-    \uC911 \uD55C\uBA85 \uC790\uC2E0\uC744 \uD76C\uC0DD\uD558\uB77C\""
+  Type: 10
+  Description: "\uD3ED\uD48D\uC774 \uBAB0\uC544\uCE58\uAE30 \uC2DC\uC791\uD588\uC2B5\uB2C8\uB2E4.\\n\uB450
+    \uC0AC\uB78C\uC740 \uC11C\uB85C\uB97C \uC758\uC9C0\uD558\uBA70 \uC55E\uC73C\uB85C
+    \uB098\uC544\uAC11\uB2C8\uB2E4."
   EventImage: {fileID: 0}
-  ChoiceNum: 2
+  ChoiceNum: 1
   ChoiceText:
-  - "\uCE74\uC778\uC774 \uC2DC\uD5D8\uC744 \uBC1B\uC2B5\uB2C8\uB2E4."
-  - "\uC544\uBCA8\uC774 \uC2DC\uD5D8\uC744 \uBC1B\uC2B5\uB2C8\uB2E4."
+  - "\uB450 \uC0AC\uB78C\uC758 \uC0AC\uC774\uAC00 \uAC00\uAE4C\uC6CC\uC9D1\uB2C8\uB2E4."
   EventAction:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
         m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
-        m_MethodName: UpgradeAllBoyCard
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
-        m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
-        m_MethodName: UpgradeAllGirlCard
+        m_MethodName: IncreaseRelationship
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

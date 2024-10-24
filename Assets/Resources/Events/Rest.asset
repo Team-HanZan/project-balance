@@ -13,10 +13,50 @@ MonoBehaviour:
   m_Name: Rest
   m_EditorClassIdentifier: 
   Type: 0
-  Description: 
+  Description: "\uB450 \uC0AC\uB78C\uC740 \uBAA8\uB2E5\uBD88 \uC55E\uC5D0\uC11C \uC26C\uC5B4\uAC00\uB824
+    \uD569\uB2C8\uB2E4."
   EventImage: {fileID: 0}
-  ChoiceNum: 0
-  ChoiceText: []
+  ChoiceNum: 3
+  ChoiceText:
+  - "\uB300\uD654\uB97C \uB098\uB208\uB2E4."
+  - "\uBAA8\uB2E5\uBD88\uC744 \uBCF4\uBA70 \uC7A0\uC5D0 \uB4ED\uB2C8\uB2E4."
+  - "\uD798\uB4E4\uC5C8\uB358 \uACFC\uAC70\uB97C \uB5A0\uC62C\uB9BD\uB2C8\uB2E4."
   EventAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
+        m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
+        m_MethodName: RestoreRelationship
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
+        m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
+        m_MethodName: RemoveOneCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
+        m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
+        m_MethodName: UpgradeChooseCard
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

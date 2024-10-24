@@ -37,7 +37,7 @@ namespace Event
         FortuneTeller,Donation,Pray,
         NightDuty,Storm,BackStab,
         Desire,BeStolen,InsultEachOther,
-        TakeTest,SpeakCandidly,MakeASacrifice,
+        TakeTest,SpeakCandidly,MakeSacrifice,
         GiveUpFood,Predictor
     }
 }
