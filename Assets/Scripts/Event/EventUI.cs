@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 namespace Event
 {
@@ -15,17 +16,10 @@ namespace Event
 
         TextMeshProUGUI _eventText;
 
-        GameObject[] _choiceButton = new GameObject[3];
-        Button _choiceButton1;
-        Button _choiceButton2;
-        Button _choiceButton3;
-
+        //meObject[] _choiceButton = new GameObject[3];
+        Button[] _choiceButton = new Button[3];
+     
         TextMeshProUGUI[] _choiceText = new TextMeshProUGUI[3];
-
-        TextMeshProUGUI _choiceText1;
-        TextMeshProUGUI _choiceText2;
-        TextMeshProUGUI _choiceText3;
-
 
         private void Awake()
         {
@@ -36,14 +30,15 @@ namespace Event
             _eventText = _mainCanvas.transform.Find("EventDescription")
                 .gameObject.GetComponent<TextMeshProUGUI>();
 
-
+            //_choiceButton[1] = _mainCanvas.transform.Find("Choice2")
+            //   .gameObject;
 
             _choiceButton[0] = _mainCanvas.transform.Find("Choice1")
-                .gameObject;
+                .GetComponent<Button>();
             _choiceButton[1] = _mainCanvas.transform.Find("Choice2")
-               .gameObject;
+               .GetComponent<Button>();
             _choiceButton[2] = _mainCanvas.transform.Find("Choice3")
-               .gameObject;
+               .GetComponent<Button>();
 
             _choiceText[0] = _choiceButton[0].GetComponentInChildren<TextMeshProUGUI>();
             _choiceText[1] = _choiceButton[1].GetComponentInChildren<TextMeshProUGUI>();
@@ -66,6 +61,20 @@ namespace Event
                 _choiceText[i].text = choiceText[i];
             }
         }
+        public void EnrollEvent(int choiceNum, List<UnityEvent> unityEvents)
+        {
+
+            print(choiceNum);
+            for (int i = 0; i < choiceNum; i++)
+            {
+                Debug.Log(_choiceButton[i]);
+                Debug.Log(unityEvents[i]);
+                var _event = unityEvents[i];
+                _choiceButton[i].onClick.AddListener(() => { Debug.Log(i); _event?.Invoke(); });
+                
+            }
+        }
+
     }
 }
 

@@ -2,6 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 namespace Event
 {
@@ -13,7 +14,9 @@ namespace Event
         public Sprite EventImage;
         public int ChoiceNum;
         public string[] ChoiceText;
-        public UnityEvent EventAction; 
+        //public UnityEvent EventAction;
+
+        public List<UnityEvent> EventAction;
 
         public void End()
         {
@@ -31,7 +34,7 @@ namespace Event
         {
             eventUI.SetupUI(EventImage, Description);
             eventUI.SetUpChoiceButton(ChoiceNum, ChoiceText);
-
+            eventUI.EnrollEvent(ChoiceNum, EventAction);
         }
         public bool Excute()
         {

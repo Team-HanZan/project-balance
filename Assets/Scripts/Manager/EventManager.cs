@@ -1,7 +1,6 @@
 using Singletons;
 using UnityEngine;
 using Event;
-using System.Collections.Generic;
 using System;
 
 namespace Manager

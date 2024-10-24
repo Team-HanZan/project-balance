@@ -22,7 +22,7 @@ MonoBehaviour:
   - "\uBAA8\uB2E5\uBD88\uC744 \uBCF4\uBA70 \uC7A0\uC5D0 \uB4ED\uB2C8\uB2E4."
   - "\uD798\uB4E4\uC5C8\uB358 \uACFC\uAC70\uB97C \uB5A0\uC62C\uB9BD\uB2C8\uB2E4."
   EventAction:
-    m_PersistentCalls:
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
         m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
@@ -36,6 +36,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
         m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
         m_MethodName: RemoveOneCard
@@ -48,6 +50,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
       - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
         m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
         m_MethodName: UpgradeChooseCard
