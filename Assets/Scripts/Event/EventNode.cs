@@ -8,7 +8,7 @@ namespace Event
     [CreateAssetMenu(fileName = "NewEvent", menuName = "Event/EventNode")]
     public class EventNode : ScriptableObject, IEventNode
     {
-        public EventType Type;
+        public EventName Name;
         public string Description; //text
         public Image EventImage;
         public int ChoiceNum;
@@ -17,20 +17,23 @@ namespace Event
 
         public void End()
         {
+            //event end
             throw new System.NotImplementedException();
         }
 
         public void Enroll()
         {
+            // enroll method to button
             throw new System.NotImplementedException();
         }
 
         public void Popup()
         {
+            // ui open and show event data
             throw new System.NotImplementedException();
         }
     }
-    public enum EventType
+    public enum EventName
     {
         Rest,TresureBox,HelpFallenGuy,
         Sacrifice,Greed,Swear,

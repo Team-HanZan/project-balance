@@ -6,6 +6,7 @@ namespace Event
 {
     public interface IEventNode
     {
+
         void Popup();
         void Enroll();
         void End();
