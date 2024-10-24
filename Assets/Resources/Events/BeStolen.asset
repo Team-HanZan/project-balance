@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de7ef30a6cd63e4a8a75ca4aebf9085, type: 3}
   m_Name: BeStolen
   m_EditorClassIdentifier: 
-  Type: 13
+  Name: 13
   Description: "\uAE38\uAC00\uC5D0 \uC788\uB294 \uB0A1\uC740 \uC9D1\uC5D0\uC11C \uC7A0\uC2DC
     \uC26C\uC5B4\uAC00\uB824 \uD569\uB2C8\uB2E4.\\n\uADF8\uB7F0\uB370 \uC9D1 \uC8FC\uC778\uC758
     \uD589\uB3D9\uC774 \uC218\uC0C1\uD558\uB124\uC694"
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: c2d4e35b326474848aa20b8a12edceb9, type: 3}
   ChoiceNum: 1
   ChoiceText:
   - "\uD53C\uACE4\uC744 \uC774\uAE30\uC9C0 \uBABB\uD558\uACE0 \uC7A1\uC5D0 \uB4ED\uB2C8\uB2E4."
@@ -25,7 +25,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
         m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
-        m_MethodName: RemoveAllItem
+        m_MethodName: AcuireRandomBoyCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

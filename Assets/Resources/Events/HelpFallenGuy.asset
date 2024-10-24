@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de7ef30a6cd63e4a8a75ca4aebf9085, type: 3}
   m_Name: HelpFallenGuy
   m_EditorClassIdentifier: 
-  Type: 2
+  Name: 2
   Description: "\uAE38\uAC00\uC5D0 \uC4F0\uB7EC\uC9C4 \uC0AC\uB78C\uC774 \uC788\uC2B5\uB2C8\uB2E4.\\n
     \uBB3C\uC744 \uD544\uC694\uB85C \uD558\uB294 \uAC83 \uAC19\uB124\uC694"
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: c2d4e35b326474848aa20b8a12edceb9, type: 3}
   ChoiceNum: 3
   ChoiceText:
   - "\uCE74\uC778\uC758 \uBB3C\uC744 \uAC74\uB0B8\uB2E4."

@@ -10,7 +10,7 @@ namespace Event
     {
         public EventName Name;
         public string Description; //text
-        public Image EventImage;
+        public Sprite EventImage;
         public int ChoiceNum;
         public string[] ChoiceText;
         public UnityEvent EventAction; 
@@ -24,13 +24,18 @@ namespace Event
         public void Enroll()
         {
             // enroll method to button
-            throw new System.NotImplementedException();
+            
         }
 
-        public void Popup()
+        public void Popup(EventUI eventUI)
         {
-            // ui open and show event data
-            throw new System.NotImplementedException();
+            eventUI.SetupUI(EventImage, Description);
+            eventUI.SetUpChoiceButton(ChoiceNum, ChoiceText);
+
+        }
+        public bool Excute()
+        {
+            return false;
         }
     }
     public enum EventName

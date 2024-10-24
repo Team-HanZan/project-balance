@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Event
@@ -7,9 +5,10 @@ namespace Event
     public interface IEventNode
     {
 
-        void Popup();
+        void Popup(EventUI eventUI);
         void Enroll();
         void End();
+        bool Excute();
     }
 }
 

@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2de7ef30a6cd63e4a8a75ca4aebf9085, type: 3}
   m_Name: FortuneTeller
   m_EditorClassIdentifier: 
-  Type: 6
+  Name: 6
   Description: "\uC810\uC7C1\uC774\uAC00 \uB2E4\uAC00\uC640 \uB450 \uC0AC\uB78C\uC5D0\uAC8C
     \uB9D0\uC744 \uAC81\uB2C8\uB2E4.\\n \"\uC790\uB124\uB4E4\uC758 \uC6B4\uBA85\uC744
     \uC810\uCCD0\uC8FC\uACA0\uB124\""
-  EventImage: {fileID: 0}
+  EventImage: {fileID: 21300000, guid: c2d4e35b326474848aa20b8a12edceb9, type: 3}
   ChoiceNum: 2
   ChoiceText:
   - "\uC810\uC744 \uBD05\uB2C8\uB2E4."
@@ -26,7 +26,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 3784242193332993850, guid: 0a46cc2bf54f811429f2338f4393c640, type: 3}
         m_TargetAssemblyTypeName: Event.EventActions, Assembly-CSharp
-        m_MethodName: AcuireItemForRelationship
+        m_MethodName: AcuireRandomBoyCard
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
